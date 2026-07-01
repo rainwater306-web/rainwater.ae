@@ -222,6 +222,7 @@ body{
 .cards .card:nth-child(1){animation-delay:.05s;}
 .cards .card:nth-child(2){animation-delay:.16s;}
 .cards .card:nth-child(3){animation-delay:.27s;}
+.cards .card:nth-child(4){animation-delay:.38s;}
 @keyframes ripple-settle{
   0%{opacity:0;transform:translateY(34px) scale(.96);}
   60%{opacity:1;}
@@ -320,6 +321,11 @@ body{
   color:#fff;
   box-shadow:0 6px 20px rgba(0,0,0,.4);
   border:1px solid rgba(255,255,255,.08);
+}
+.btn-map{
+  background:linear-gradient(135deg,#0e7490,var(--aqua));
+  color:#fff;
+  box-shadow:0 6px 20px rgba(56,189,248,.32);
 }
 
 .btn-icon{width:20px;height:20px;flex-shrink:0;}
@@ -423,6 +429,22 @@ footer strong{color:rgba(255,255,255,.4);}
             <path d="m22 7-10 7L2 7"/>
           </svg>
           sales@rainwater.ae
+        </a>
+      </div>
+    </div>
+
+    <!-- الموقع -->
+    <div class="card">
+      <div class="card-shimmer"></div>
+      <div class="card-eyebrow"><span class="dot" style="animation-delay:.9s;background:var(--aqua);"></span>Location · موقعنا</div>
+      <div class="card-title"><span class="ic">📍</span>موقعنا على الخريطة</div>
+      <div class="btn-stack">
+        <a class="btn btn-map" href="https://maps.app.goo.gl/hx85AaTz66LMDsHn6" target="_blank">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          افتح في خرائط جوجل
         </a>
       </div>
     </div>
